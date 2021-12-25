@@ -10,5 +10,4 @@ RUN pnpm build
 # app should run at port 8080
 EXPOSE 8080
 RUN chown -R node /usr/src/app
-USER node
 CMD ["node", "dist/main"]
